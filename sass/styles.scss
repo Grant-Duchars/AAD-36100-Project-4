@@ -1,0 +1,68 @@
+@charset "utf-8";
+
+// Import our fonts
+@import url("https://fonts.googleapis.com/css2?family=BioRhyme&family=Mooli&family=Nabla&display=swap");
+
+// Branding
+$yellow: #ffca3a;
+$blue: #1b8dd5;
+$purple: #5f4483;
+$light-purple: #7655a1;
+$green: #8ac926;
+$white: #f0f0f0;
+
+// Update bulma variables
+$primary: $green;
+$body-background-color: $purple;
+$footer-background-color: $green;
+$title-color: $white;
+$subtitle-color: $white;
+$box-background-color: $light-purple;
+
+.burg {
+  color: $blue;
+  font-family: "BioRhyme", serif;
+}
+
+.dog {
+  color: $yellow;
+  font-family: "Mooli", sans-serif;
+}
+
+.versus {
+  font-family: "Nabla", cursive;
+  font-size: 7em;
+}
+
+.logo {
+  text-align: center;
+  font-size: 5em;
+}
+
+/* Animated Logo Stuff */
+@keyframes animated_logo {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+#al1 {
+  animation: animated_logo 1.5s ease 0.5s 1 normal both;
+}
+
+#al2 {
+  animation: animated_logo 1.5s ease 1s 1 normal both;
+}
+
+#al3 {
+  animation: animated_logo 1.5s ease 1.5s 1 normal both;
+}
+
+#al4 {
+  animation: animated_logo 1.5s ease 2s 1 normal both;
+}
+
+@import "../node_modules/bulma/bulma.sass";

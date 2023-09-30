@@ -1,0 +1,14 @@
+{
+  "name": "aad-36100-project-4",
+  "version": "1.0.0",
+  "main": "sass/mystyles.scss",
+  "devDependencies": {
+    "bulma": "^0.9.4",
+    "node-sass": "^9.0.0"
+  },
+  "scripts": {
+    "css-build": "node-sass --omit-source-map-url sass/styles.scss css/styles.css",
+    "css=watch": "npm run css-build -- --watch",
+    "start": "npm run css=watch"
+  }
+}
